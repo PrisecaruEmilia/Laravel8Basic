@@ -14,7 +14,12 @@ Route::get('/home', function () {
 
 Route::get('/about', function () {
     return view('about');
-})->middleware('check'); //in url /about?check=25 => access to about page else to home page
+});
+
+// Route::get('/about', function () {
+//     return view('about');
+// })->middleware('check');
+//in url /about?check=25 => access to about page else to home page
 
 // Route::get('/contact', function () {
 //     return view('contact');
